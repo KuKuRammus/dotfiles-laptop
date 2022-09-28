@@ -1,0 +1,48 @@
+* {
+    background-color: transparent;
+    border: 0;
+    spacing: 0;
+    text-color: #b4afaa;
+}
+
+// Main window
+window {
+    width: 475px;
+    background-color: #212121;
+}
+
+// Search and label box
+inputbar {
+    children: [entry, prompt];
+    padding: 16px;
+    background-color: #212121;
+}
+
+// Search input
+entry {
+    text-color: #e6e1dc;
+    placeholder: "Note: Shift-Enter to run in terminal";
+    placeholder-color: #6b6762;
+}
+
+// Search type label
+prompt {
+    text-color: #6b6762;
+}
+
+// Wrapper
+listview {
+    text-color: #b4afaa;
+    background-color: #252525;
+}
+
+// Single search result
+element {
+    padding: 10px 16px;
+}
+
+// Selected search result
+element selected {
+    background-color: #313131;
+}
+

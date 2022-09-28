@@ -1,0 +1,37 @@
+separator=false
+separator_block_width=6
+align=center
+color=#f2f2f2
+full_text= | 
+
+[memory]
+command=~/.config/i3blocks/blocklets/memory/memory
+label=MEM 
+interval=30
+
+[separator]
+
+[cpu_usage2]
+command=~/.config/i3blocks/blocklets/cpu_usage2/cpu_usage2
+markup=pango
+interval=persist
+min_width=CPU 100.00%
+REFRESH_TIME=1
+LABEL=CPU 
+WARN_PERCENT=50
+CRIT_PERCENT=80
+DECIMALS=2
+
+[separator]
+
+[battery]
+command=acpi -b | grep -P -o '([0-9]+(?=%))' | sed "s/$/%/"
+label=BAT 
+interval=60
+min_width=BAT 100%
+
+[separator]
+
+[time]
+command=date '+%Y-%m-%d (%a) %H:%M:%S '
+interval=5

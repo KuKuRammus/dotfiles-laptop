@@ -1,0 +1,16 @@
+configuration {
+    // Modes to display
+    modi: "run,ssh";
+
+    // Font
+    font: "JetBrains Mono 12";
+
+    // Terminal interactions
+    terminal: "alacritty";
+    ssh-client: "ssh";
+    ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";
+    run-command: "{cmd}";
+    run-shell-command: "{terminal} -e {cmd}";
+}
+@theme "kukurammus"
+
