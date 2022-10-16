@@ -140,4 +140,5 @@ bindsym Print exec "flameshot gui"
 # Autostart
 exec --no-startup-id flameshot
 exec --no-startup-id dunst
+exec --no-startup-id blueman-applet
 
